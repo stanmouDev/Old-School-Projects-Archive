@@ -1,0 +1,19 @@
+# Ignore system files
+Thumbs.db
+.DS_Store
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore log and temp files
+*.log
+*.tmp
+
+# Ignore node_modules and Python cache (if relevant)
+node_modules/
+_pycache_/
+
+# Ignore OS-specific stuff
+desktop.ini
