@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annie-Huang/portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Annie-Huang/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/Annie-Huang/portfolio-website#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

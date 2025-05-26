@@ -1,0 +1,91 @@
+https://www.youtube.com/watch?v=_xkSvufmjEs&t=204s (Build and deploy a portfolio website [Full Tutorial Course])
+https://scrimba.com/g/gportfolio
+ttps://github.com/Annie-Huang/portfolio-website
+
+
+https://cdnjs.com/libraries/font-awesome/5.12.1
+https://cdnjs.com/libraries/normalize
+
+http://dribbble.com     << actually never heard of this website before.
+
+https://fontawesome.com/icons?d=gallery
+
+=====================================================================================
+
+C:\react\portfolio-website>npm init -y
+C:\react\portfolio-website>npm install --save-dev lite-server
+C:\react\portfolio-website>npm run start
+
+        <nav class="nav">
+            <ul class="nav__list"></ul>
+the __ means list is a sub-component of nav in class="nav", BEM standard.
+
+
+<h1 class="section__title section__title--intro"></h1>
+the --intro means it is the modifier of section__title
+
+
+if your title is h2, you should have your subtitle as <p class="xxx">, like this:
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+only use h3 for subtitle if you are going to have multiple section of h3 and underneath it got something like the
+<h3>Design + Development</h3>
+<h3>E-Commerce</h3>
+<h3>WordPress</h3> structure.
+
+
+do margin and padding using em, because it's related to the font size.
+
+
+CSS variable:
+--clr-light: #fff;
+background: var(--clr-light);
+
+
+Set thing into the middle of a div:
+margin: 0 auto;
+
+Do box-shadow in multiple layer and it will look better:
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);     <<< remember the second layer the number should be smaller than the first row
+
+settings between the two identical child component:
+    .service + .service {		<< + meaning the slibing
+        margin-left: 2em;
+    }
+
+when you usually do uppercase you can also consider letter-spacing:
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+A better way to handle grid-template-columns:
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* You can also set max-width but remember to set margin: 0 auto as well   */
+
+
+Nice image hover effect:
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+            </a>
+
+.portfolio__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio__img {
+    transition:
+            transform 750ms cubic-bezier(.5, 0, .5, 1), /* very similar to ease-in-out, but more suttle */
+            opacity 250ms linear;
+}
+
+.portfolio__img:hover {
+    transform: scale(1.2);
+    opacity: 0.75;
+}
+
+
+
+
+
